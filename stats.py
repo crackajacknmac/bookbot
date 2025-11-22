@@ -4,11 +4,7 @@ def book_word_count(text):
         words = wc_text.split()
         for each in words:
                 word_count +=1
-        return word_count
-
-"""Don't touch above this line"""
-
-
+        return word_count"
 
 def character_count(text):
 	character_dict ={}
@@ -19,3 +15,8 @@ def character_count(text):
 		if each in character_dict:
 			character_dict[each] += 1
 	return character_dict
+
+"""Don't touch above this line"""
+
+def create_sorted_list(character_dict)
+
