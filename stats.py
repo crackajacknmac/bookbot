@@ -22,8 +22,13 @@ def create_sorted_list(character_dict):
 	report_list = [] 
 	transition_dict = {}
 	for entry in character_dict: 
-		if entry.isalpha(): #This triggers the if statement for only alphabetical characters
-			transition_dict = entry[value]
+		if entry.isalpha():
+			count = character_dict[entry]
+			transition_dict = {"char":entry,"num":count}
 			report_list.append(transition_dict)
-
+	report_list.sort(reverse=True, key=sort_list)
 	return report_list
+
+def sort_list(report_list):
+	return report_list["num"]
+

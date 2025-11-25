@@ -17,7 +17,8 @@ def main():
 	print("--------- Character Count -------")
 	character_counter = character_count(text)
 	final_result = create_sorted_list(character_counter)
-	print(f"{final_result}")
+	for entry in final_result:
+		print(f"{entry["char"]}: {entry["num"]}")
 	print("============= END ===============")
 
 main()
